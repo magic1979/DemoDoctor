@@ -1,0 +1,2658 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta property="og:locale" content="en_US" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+				
+				<link rel="stylesheet" type="text/css" href="css/index.css" />
+				<link rel="stylesheet" href="font.css">
+					
+					<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.5.min.css" />
+					<link rel="stylesheet" href="themes/doctor.css" />
+					<link rel="stylesheet" href="themes/jquery.mobile.icons-1.4.5.min.css" />
+					<link rel="stylesheet" href="css/spinner.css" />
+					<link rel="stylesheet" href="css/app-reset.css" />
+					<link rel="stylesheet" href="css/app-ios.css" />
+					<link rel="stylesheet" type="text/css" href="css/zocial.css" />
+					<link rel="stylesheet" href="css/jquery-ui.css">
+						
+						<script src="jquery-1.11.3.min.js"></script>
+						<script src="js/jquery.finger.js"></script>
+						<script src="js/jquery-ui.min.js"></script>
+						<script src="js/jquery.mobile-1.4.5.min.js"></script>
+						
+						<!--<script type="application/javascript" src="http://cubiq.org/dropbox/iscroll4/src/iscroll.js"></script>-->
+						<script type="text/javascript" src="js/iscroll4.js"></script>
+						
+						<script type="text/javascript">
+						
+							function loaded() {
+								
+								var myScroll;
+								myScroll = new iScroll('wrapper', {
+													   zoom: true,
+													   click: true,
+													   zoomMin:1,
+													   zoomMax:1.5,
+													   zoomStart:1,
+													   hideScrollbar: true,
+													   hScrollbar:false,
+													   vScrollbar:false,
+													   bounce: false,
+													   wheelAction: 'zoom',
+													   onBeforeScrollStart:function (e) {
+													   
+													   },
+													   onScrollMove: function(e){}
+								});
+								
+
+							}
+						
+						setTimeout (function(){
+							myScroll.refresh();
+						}, 500);
+						
+												
+						document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+						
+						document.addEventListener('DOMContentLoaded', loaded, false);
+						
+						</script>
+						
+						<style type="text/css">
+							* {
+								-webkit-box-sizing: border-box;
+								-moz-box-sizing: border-box;
+								box-sizing: border-box;
+							}
+						
+						html {
+							-ms-touch-action: none;
+						}
+						
+						body,ul,li {
+							padding: 0;
+							margin: 0;
+							border: 0;
+						}
+						
+						body {
+							font-size: 12px;
+							font-family: ubuntu, helvetica, arial;
+							overflow: hidden; /* this is important to prevent the whole page to bounce */
+						}
+						
+						#header {
+							position: absolute;
+							z-index: 2;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 45px;
+							line-height: 45px;
+							padding: 0;
+							color: #fff;
+							font-size: 20px;
+							text-align: center;
+							font-weight: bold;
+						}
+						
+						#footer {
+							position: absolute;
+							z-index: 2;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 45px;
+							line-height: 45px;
+							padding: 0;
+							color: #fff;
+							font-size: 20px;
+							text-align: center;
+							font-weight: bold;
+						}
+						
+						#wrapper {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						
+						
+						
+						#wrapper2 {
+							position: absolute;
+							z-index: 1;
+							top: 2%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						
+						#wrapper3 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						
+						#wrapper4 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						#wrapper5 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						#wrapper6 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						
+						#wrapper7 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+						
+						#wrapper8 {
+							position: absolute;
+							z-index: 1;
+							top: 12%;
+							bottom: 0px;
+							left: 0;
+							width: 100%;
+							background: #ffffff;
+							overflow: hidden;
+							
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+							
+						}
+
+
+						#scroller {
+							position: absolute;
+							z-index: 1;
+							-webkit-tap-highlight-color: rgba(0,0,0,0);
+							width: 100%;
+							-webkit-transform: translateZ(0);
+							-moz-transform: translateZ(0);
+							-ms-transform: translateZ(0);
+							-o-transform: translateZ(0);
+							transform: translateZ(0);
+							-webkit-touch-callout: none;
+							-webkit-user-select: none;
+							-moz-user-select: none;
+							-ms-user-select: none;
+							user-select: none;
+							-webkit-text-size-adjust: none;
+							-moz-text-size-adjust: none;
+							-ms-text-size-adjust: none;
+							-o-text-size-adjust: none;
+							text-size-adjust: none;
+						}
+						
+						#scroller ul {
+							list-style: none;
+							padding: 0;
+							margin: 0;
+							width: 100%;
+							text-align: left;
+						}
+						
+						#scroller li {
+							padding: 0 10px;
+							height: 40px;
+							line-height: 40px;
+							border-bottom: 1px solid #fff;
+							border-top: 1px solid #fff;
+							background-color: #fff;
+							font-size: 14px;
+						}
+						
+							</style>
+						
+						<style>
+							.ui-icon-taifun:after {
+								background-image: url("img/MessageW.png");
+								background-size: 18px 18px;
+								
+							}
+						.ui-icon-userhome:after {
+							background-image: url("img/contactW.png");
+							background-size: 18px 18px;
+							
+						}
+						.ui-icon-pinhome:after {
+							background-image: url("img/RicettaW.png");
+							background-size: 18px 18px;
+							
+						}
+						.ui-icon-ristohome:after {
+							background-image: url("img/certificatoW.png");
+							background-size: 18px 18px;
+							
+						}
+						.ui-icon-homehome:after {
+							background-image: url("img/DoctorW.png");
+							background-size: 18px 18px;
+							
+						}
+
+						
+						.ui-mobile, .ui-mobile .ui-page, .ui-mobile [data-role="page"],
+						.ui-mobile [data-role="dialog"], .ui-page, .ui-mobile .ui-page-active {
+							height: 100%;
+							overflow: hidden;
+							-webkit-backface-visibility: hidden;
+						}
+						
+						.div1 {
+							background-color: #1f6ca2;
+							height: 52px;
+							border: none;
+							
+							vertical-align: middle;
+						}
+						.div2 {
+							background-color: #ffffff;
+						}
+						.div9 {
+							background-color: #000000;
+						}
+						.div3Copy {
+							background-color: #ffffff;
+							position: absolute;
+							z-index: 2;
+							top:5px;
+							left:5px;
+							width:97%;
+							height: 52px;
+							padding: 0;
+							color: #000;
+							
+							text-align: center;
+							font-weight: bold;
+							
+						}
+						
+						.div3 {
+							background-color: #ffffff;
+							position: absolute;
+							z-index: 2;
+							top:0px;
+							left:0px;
+							width:100%;
+							height: 8%;
+							padding: 0;
+							color: #000;
+							
+							text-align: center;
+							font-weight: bold;
+							
+						}
+						.div33 {
+
+							position: absolute;
+							top:5px;
+							left:5px;
+
+							padding: 0;
+							
+							text-align: center;
+							font-weight: bold;
+							
+						}
+						.div4 {
+							background: rgb(125,126,125); /* Old browsers */
+							background: -moz-linear-gradient(45deg, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+							background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+							background: -webkit-linear-gradient(45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+							background: -o-linear-gradient(45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+							background: -ms-linear-gradient(45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+							background: linear-gradient(45deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+						}
+						.div5 {
+							background-color: #000;
+							position: absolute;
+							z-index: 19;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 5%;
+							padding: 0;
+							color: #000;
+							
+							text-align: center;
+							font-weight: bold;
+							
+							opacity: 0.5;
+							filter: alpha(opacity=50);
+							
+						}
+						
+						.div55 {
+							position: absolute;
+							z-index: 20;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							height: 5%;
+							padding: 0;
+							color: #000;
+							
+							text-align: center;
+							font-weight: bold;
+						}
+						
+						.div56{
+							background-color: #2E2E2E;
+							width: 100%;
+							
+							text-decoration: none;
+							text-shadow:0 0 0;
+							
+							width:90%;
+
+
+							opacity: 0.9;
+							filter: alpha(opacity=90);
+							
+						}
+						
+						.galleriaimmagini {
+							position: absolute;
+						}
+						
+						.div6 {
+							background-color: #000;
+						}
+						
+						.div8 {
+							z-index: 0;
+							top:62px;
+
+							width:90%;
+							height: 100%;
+
+							color: #000;
+							font-size: 12px;
+						
+						}
+						
+						.trBorderCell
+						{
+							height: 30px;
+							width: 320px;
+							background: rgba(0,0,0,.6);
+							
+						}
+						
+						.margine
+						{
+							margin:0 auto;
+						}
+						
+						.arrotondamento
+						{
+							border-radius: 8px;
+							-moz-border-radius: 8px; /* firefox */
+							-webkit-border-radius: 8px; /* safari, chrome */
+						}
+						.custom-btn {
+							width: 280px;
+						}
+						
+						.custom-btn2 {
+							width: 280px;
+						}
+						
+						.custom-btn3 {
+							width: 100px;
+						}
+						
+						.big { height: 80px;}
+						.big .ui-btn-inner { padding-top:25px; }
+						
+						table.tablesorter {
+							font-family:arial;
+							background-color: #f0f0f0;
+							margin:10px 0pt 15px;
+							font-size: 8pt;
+							width: 95%;
+							text-align: left;
+							border: 0px solid #FFF;
+							
+							border-radius: 5px;
+							-moz-border-radius: 5px; /* firefox */
+							-webkit-border-radius: 5px; /* safari, chrome */
+							
+						}
+						table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+							background-color: #B40431;
+							border: 1px solid #FFF;
+							font-size: 8pt;
+							padding: 4px;
+							width: 55%;
+							
+							border-radius: 5px;
+							-moz-border-radius: 5px; /* firefox */
+							-webkit-border-radius: 5px; /* safari, chrome */
+							
+						}
+						table.tablesorter thead tr .header {
+							background-image: url(bg.gif);
+							background-repeat: no-repeat;
+							background-position: center right;
+							cursor: pointer;
+						}
+						table.tablesorter tbody td {
+							color: #B40431;
+							padding: 4px;
+							background-color: #FFF;
+							vertical-align: top;
+							
+						}
+						table.tablesorter tbody tr.odd td {
+							background-color:#000000;
+						}
+						table.tablesorter thead tr .headerSortUp {
+							background-image: url(asc.gif);
+						}
+						table.tablesorter thead tr .headerSortDown {
+							background-image: url(desc.gif);
+						}
+						table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+							background-color: #B40431;
+							
+						}
+						
+						.home {
+							background-color: #9d3434;
+							background-image: url(img/minusW.png);
+							background-size: 26px 26px;
+							background-repeat: no-repeat;
+							background-position:center;
+							
+							height:28px;
+							width:28px;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							-webkit-box-shadow: 0px 0px 0.5px 1px #FFF;
+							-moz-box-shadow: 0px 0px 0.5px 1px #FFF;
+							box-shadow: 0px 0px 0.5px 1px #FFF;
+						}
+						
+						.home1 {
+							background-color: #9d3434;
+							background-image: url(img/plusW.png);
+							background-size: 26px 26px;
+							background-repeat: no-repeat;
+							background-position:center;
+							
+							height:28px;
+							width:28px;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							-webkit-box-shadow: 0px 0px 0.5px 1px #FFF;
+							-moz-box-shadow: 0px 0px 0.5px 1px #FFF;
+							box-shadow: 0px 0px 0.5px 1px #FFF;
+						}
+						
+						.home:active {
+							background-color: #000000;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							-webkit-box-shadow: 0px 0px 0.5px 1px #000;
+							-moz-box-shadow: 0px 0px 0.5px 1px #000;
+							box-shadow: 0px 0px 0.5px 1px #000;
+						}
+						
+						.home1:active {
+							background-color:#000000;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							-webkit-box-shadow: 0px 0px 0.5px 1px #000;
+							-moz-box-shadow: 0px 0px 0.5px 1px #000;
+							box-shadow: 0px 0px 0.5px 1px #000;
+						}
+						
+						.circolare {
+							width: 30px;
+							height: 30px;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							-webkit-box-shadow: 0px 0px 0.5px 0.5px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0.5px #000;
+							box-shadow: 0px 0px 0.5px 0.5px #000;
+						}
+						
+						a {text-decoration:none;}
+						
+						.styled-select select {
+							background: transparent;
+							width: 268px;
+							padding: 5px;
+							font-size: 16px;
+							line-height: 1;
+							border: 0;
+							border-radius: 0;
+							height: 34px;
+							-webkit-appearance: none;
+						}
+						
+						.banner {
+							left:110px;
+							bottom:20px;
+							position: fixed;
+							
+							margin-left: auto ;
+							margin-right: auto ;
+							
+						}
+						
+						hr.style-six {
+							border: 0;
+							height: 0;
+							border-top: 1px solid rgba(0, 0, 0, 0.1);
+							border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+						}
+						
+						.mynav .ui-select, .mynav .ui-btn {
+							margin-top: 0;
+							margin-bottom: 0;
+							margin-left: 2px;
+							margin-right: 2px !important;
+						}
+						.conn {
+							font-size: 9pt;
+							color:#FFF;
+							background-color: #FF8000;
+						}
+						
+						.badge1 {
+							position:relative;
+						}
+						.badge1[data-badge]:after {
+							content:attr(data-badge);
+							position:absolute;
+							top:3px;
+							right:-1px;
+							font-size:.7em;
+							background:green;
+							color:white;
+							width:18px;height:18px;
+							text-align:center;
+							line-height:20px;
+							border-radius:50%;
+							box-shadow:0 0 1px #333;
+							border: 1px solid #fff;
+						}
+						.badge2 {
+							
+						}
+						.badge2[data-badge]:after {
+							
+						}
+						.badge3 {
+							position:relative;
+						}
+						.badge3[data-badge]:after {
+							content:attr(data-badge);
+							position:absolute;
+							top:-30px;
+							right:-15px;
+							font-size:.7em;
+							background:green;
+							color:white;
+							width:20px;height:20px;
+							text-align:center;
+							line-height:20px;
+							border-radius:50%;
+							box-shadow:0 0 1px #333;
+							border: 1px solid #fff;
+						}
+						
+						
+						.someClass b {
+							font-weight: normal;
+							text-decoration: none;
+							text-shadow:0 0 0;
+						}
+						
+						.someClass {
+							font-weight: normal;
+							text-decoration: none;
+							text-shadow:0 0 0;
+						}
+						.someClass2 {
+							font-weight: normal;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							font-size: 18px;
+						}
+						
+						.btn {
+							background: #9f1e24;
+							background-image: -webkit-linear-gradient(top, #9f1e24, ##9f1e24);
+							background-image: -moz-linear-gradient(top, #9f1e24, ##9f1e24);
+							background-image: -ms-linear-gradient(top, #9f1e24, ##9f1e24);
+							background-image: -o-linear-gradient(top, #9f1e24, ##9f1e24);
+							background-image: linear-gradient(to bottom, #9f1e24, ##9f1e24);
+							-webkit-border-radius: 21;
+							-moz-border-radius: 21;
+							border-radius: 21px;
+							font-family: Arial;
+							color: #ffffff;
+							font-size: 24px;
+							padding: 10px 20px 10px 20px;
+							text-decoration: none;
+						}
+						
+						.btn:hover {
+							background: #000000;
+							background-image: -webkit-linear-gradient(top, #000000, #9f1e24);
+							background-image: -moz-linear-gradient(top, #000000, #9f1e24);
+							background-image: -ms-linear-gradient(top, #000000, #9f1e24);
+							background-image: -o-linear-gradient(top, #000000, #9f1e24);
+							background-image: linear-gradient(to bottom, #000000, #9f1e24);
+							text-decoration: none;
+						}
+						
+						.inAppBrowserWrap {
+							background-color: rgba(0,0,0,0.75);
+							color: rgba(235,235,235,1.0);
+							width:320px;
+						}
+						.inAppBrowserWrap menu {
+							overflow: auto;
+							list-style-type: none;
+							padding-left: 0;
+						}
+						.inAppBrowserWrap menu li {
+							font-size: 25px;
+							height: 25px;
+							float: left;
+							margin: 0 10px;
+							padding: 3px 10px;
+							text-decoration: none;
+							color: #ccc;
+							display: block;
+							background: rgba(30,30,30,0.50);
+						}
+						.inAppBrowserWrap menu li.disabled {
+							color: #777;
+						}
+						
+						#pluto {
+							/* Cosmettics only */
+							position:absolute;
+							background: #000000;
+							width: 100%;
+							height:100%;
+							
+							border: 1px solid black;
+							padding: 20px;
+							text-align: center;
+							/* The real deal */
+							margin: 1px auto;
+							top:0;
+							z-index: 100;
+							
+							
+							opacity: 0.6;
+							filter: alpha(opacity=60);
+						}
+						
+						#pippo {
+							/* Cosmettics only  */
+							
+							background: #2E2E2E;
+							border-radius: 10px;
+							
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin-top: -150px;
+							margin-left: -150px;
+							width: 300px;
+							height: 260px;
+							
+							z-index: 101;
+							
+						}
+						
+						.pippoIPAD {
+							/* Cosmettics only  */
+							
+							background: #2E2E2E;
+							border-radius: 10px;
+							
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin-top: -280px;
+							margin-left: -280px;
+							width: 600px;
+							height: 560px;
+							
+							z-index: 101;
+							
+						}
+						
+						#pluto5 {
+							/* Cosmettics only */
+							position:absolute;
+							background: #000000;
+							width: 100%;
+							height:100%;
+							
+							border: 1px solid black;
+							padding: 20px;
+							text-align: center;
+							/* The real deal */
+							margin: 1px auto;
+							top:0;
+							z-index: 110;
+							
+							
+							opacity: 0.6;
+							filter: alpha(opacity=60);
+						}
+						
+						#pippo5 {
+							/* Cosmettics only  */
+							
+							background: #2E2E2E;
+							border-radius: 10px;
+							
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin-top: -150px;
+							margin-left: -150px;
+							width: 300px;
+							height: 260px;
+							
+							z-index: 111;
+							
+						}
+						
+						#pluto1 {
+							background: #000000;
+							
+							opacity: 0.6;
+							filter: alpha(opacity=60);
+						}
+						
+						.pulsante11 {
+							background-image: url(img/button3.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 1;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+
+						}
+						
+						.pulsante1 {
+							background-image: url(img/button3.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+						}
+						
+						.pulsante1:active {
+							background-image: url(img/button3a.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+
+						}
+						.pulsante2 {
+							background-image: url(img/video.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsante2:active {
+							background-image: url(img/videoa.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						.pulsante3 {
+							background-image: url(img/button5.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsante3:active {
+							background-image: url(img/button5a.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						.pulsante3new {
+							background-image: url(img/button5_new.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsante3new:active {
+							background-image: url(img/button5a.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						.pulsanteback {
+							background-image: url(img/back.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsanteback:active {
+							background-image: url(img/backa.png);
+							
+							border-radius:5px;
+							-moz-border-radius:5px;
+							-webkit-border-radius:5px;
+							-o-border-radius: 5px;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						.pulsantereply {
+							background-image: url(img/buttonSMS.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsantereply:active {
+							background-image: url(img/backa.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+
+.pulsanterefresh {
+	background-image: url(img/refresh.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:center;
+	width: 100%;
+	height: 0;
+	padding-top: 66.64%; /* (img-height / img-width * width) */
+	/* (853 / 1280 * 100) */
+	
+	z-index: 21;
+	border-radius:999em;
+	-moz-border-radius:999em;
+	-webkit-border-radius:999em;
+	-o-border-radius: 999em;
+	
+	/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+	 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+	 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+}
+						
+						.pulsanterefresh:active {
+							background-image: url(img/refresha.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+
+.pulsante4 {
+	background-image: url(img/button4.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:center;
+	width: 100%;
+	height: 0;
+	padding-top: 66.64%; /* (img-height / img-width * width) */
+	/* (853 / 1280 * 100) */
+	
+	z-index: 21;
+	border-radius:999em;
+	-moz-border-radius:999em;
+	-webkit-border-radius:999em;
+	-o-border-radius: 999em;
+	
+	/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+	 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+	 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+}
+						
+						.pulsante4:active {
+							background-image: url(img/button4a.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						
+						.pulsante5 {
+							background-image: url(img/button1.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:center;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+							
+							z-index: 21;
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							/*-webkit-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 -moz-box-shadow: 0px 0px 0.5px 1.5px #000;
+							 box-shadow: 0px 0px 0.5px 1.5px #000;*/
+						}
+						
+						.pulsante5:active {
+							background-image: url(img/button1a.png);
+							
+							border-radius:999em;
+							-moz-border-radius:999em;
+							-webkit-border-radius:999em;
+							-o-border-radius: 999em;
+							
+							z-index: 21;
+							-webkit-box-shadow: 0px 0px 0.5px 0px #000;
+							-moz-box-shadow: 0px 0px 0.5px 0px #000;
+							box-shadow: 0px 0px 0.5px 0px #000;
+						}
+						
+						.foto {
+							background-image: url(img/Immagine.png);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position:left;
+							width: 100%;
+							height: 0;
+							padding-top: 66.64%; /* (img-height / img-width * width) */
+							/* (853 / 1280 * 100) */
+
+						}
+
+						
+						.bannerino {
+							
+							border-radius:5px;
+							-moz-border-radius:5px;
+							-webkit-border-radius:5px;
+							-o-border-radius: 5px;
+
+						}
+						
+
+							</style>
+						
+						<style type="text/css">
+							img { -webkit-transform:translate3d(0,0,0) }
+							div { -webkit-transform:translate3d(0,0,0) }
+							
+						.visione {
+								font-size:12px;
+								text-decoration: none;
+								text-shadow:0 0 0;
+								color: #000;
+							}
+						
+						.visioneiper {
+							font-size:12px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #FFF;
+						}
+						
+						.visioneiperIPAD {
+							font-size:24px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #FFF;
+						}
+						
+						
+						.visioneCon {
+							font-size:16px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #000;
+						}
+						
+						.visioneIPAD {
+							font-size:24px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #000;
+						}
+						
+						.visioneIPAD0 {
+							font-size:16px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #000;
+						}
+						
+						.visione2 {
+							font-size:12px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione2IP4 {
+							font-size:10px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione2Con {
+							font-size:16px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						
+						.visione2IPAD {
+							font-size:24px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						
+						.visione3 {
+							font-size:15px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione3a {
+							font-size:18px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione3IPAD {
+							font-size:30px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione3aIPAD {
+							font-size:40px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: #042e72;
+						}
+						.visione4 {
+							font-size:14px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: red;
+						}
+						.visione4IPAD {
+							font-size:30px;
+							text-decoration: none;
+							text-shadow:0 0 0;
+							color: red;
+						}
+						
+						.ui-overlay-a{
+							background: #ffffff;
+							background-image:url('img/Logo.png');
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+						}
+						.ui-overlay-b{
+							background: #ffffff;
+
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+						}
+						.ui-overlay-c{
+							background: #ffffff;
+
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+						}
+						.ui-overlay-d{
+							background: #ffffff;
+
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+						}
+						.ui-overlay-e{
+							background: #ffffff;
+
+							background-repeat:no-repeat;
+							background-attachment:fixed;
+							/*background-position:center; */
+							background-position: right bottom; /*Positioning*/
+						}
+						
+						table.gridtable {
+							height: 180px;
+							font-family: verdana,arial,sans-serif;
+							font-size:8px;
+							color:#333333;
+							border-width: 1px;
+							border-color: #666666;
+							border-collapse: collapse;
+						}
+						table.gridtable th {
+							border-width: 1px;
+							padding: 8px;
+							border-style: solid;
+							border-color: #666666;
+							background-color: #6eabd5;
+						}
+						table.gridtable td {
+							border-width: 1px;
+							padding: 8px;
+							border-style: solid;
+							border-color: #666666;
+							background-color: #ffffff;
+						}
+						</style>
+	</head>
+	<body>
+		
+		<div id="page" data-role="page" class="div2" >
+			
+				<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+					<table height="52" align="center">
+						<tr>
+							<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+						</tr>
+					</table>
+				</div>
+			
+		<div class="spinner" id="spinner"></div>
+		
+		<div id="wrapper">
+			<div id="scroller">
+				<table id="spazioipad" style="display: none;" height="30px"><tr><td></td></tr></table>
+				
+				<table id="pagee" width="98%" border="0" valign="center" align="center" style="display: none;">
+					<tr>
+						<td width="5%">
+							<a href="javascript:apri()"><img id="pallina" src="img/Formazione.png" width="26"></a>
+						</td>
+						<td width="95%" align="left">
+							<div id="testoTitolo" class="visione3"><b>Orari Studio</b></div>
+						</td>
+
+					</tr>
+					<tr>
+						<td width="100%" align="justify" colspan="2">
+							<!--<div id="testo" class="visione">E' la piu' grande organizzazione di scambio referenze a livello mondiale.<br> La Mission di BNI e' aiutare i Membri ad aumentare il proprio business tramite un programma basato sul passaparola strutturato, positivo e professionale che permetta loro di sviluppare relazioni significative e a lungo termine con imprenditori e professionisti. La filosofia BNI si basa sull'idea di "Givers Gain" (Chi da', riceve).<br> BNI offre ai Membri l'opportunita' di condividere idee, contatti, network, e, cosa piu' importante, referenze di business.&nbsp;<a id="vedi" href="#" ><font color="#042e72">continua&nbsp;[...]</a></div>-->
+							
+					<table class="gridtable" width="300" align="center">
+					<th></th>
+					<th>Lun.</th>
+					<th>Mar.</th>
+					<th>Mer.</th>
+					<th>Gio.</th>
+					<th>Ven.</th>
+					<th>Sab.</th>
+					</tr>
+					<td>Mat.</td>
+					<td>9:30-12:30</td>
+					<td>--</td>
+					<td>9:30-12:30</td>
+					<td>--</td>
+					<td>9:30-12:30</td>
+					<td>9:30-12:30</td>
+					</tr>
+					<td>Pom.</td>
+					<td>16:30-19:00</td>
+					<td>16:30-19:00</td>
+					<td>16:30-19:00</td>
+					<td>--</td>
+					<td>16:30-19:00</td>
+					<td>--</td>
+					</tr>
+					</table>
+				
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="center">
+							<table height="20px" width="300" align="center">
+								<tr>
+									<!--<td width="5%"><img id="pallina" src="img/Formazione.png" width="26"></td>
+									<td width="95%">il giorno 24 lo studio rimarra chiuso.</td>-->
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr id="tr4">
+						<td width="100%" colspan="2" align="center">
+							
+						</td>
+					</tr>
+					<tr id="tr4b">
+						<td width="100%" colspan="2" align="center">
+							
+						</td>
+					</tr>
+
+					</table>
+				
+				<table id="phone" align="center" border="0" width="97%" height="90%" style="display: none;">
+					<tr>
+						<td align="right" width="40%" valign="top">
+							<img id="copertina" src="img/Immagine.png" height="46%"></div>
+						</td>
+						<td align="center" width="60%" valign="center">
+				<table align="center">
+					<tr>
+						<td align="center">
+							<div id="Nome" class="visione3"><b>Cardiologo, Patologo Clinico</b></div>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							&nbsp;
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+							<div id="titolo"><img id="pallina" src="img/Pin.png" width="26"><b>Via delle orse, 34 - Roma</b></div>
+							<!--<div id="titolob" class="visione4"><b>BNI Italia</b></div>-->
+						</td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+			
+			</table>
+			
+					<!--<table width="100%" height="10%" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+					 
+							</td>
+						</tr>
+					</table>
+					
+					<table id="ciccio" width="98%" height="100%" border="0" valign="center" align="center" class="div56">
+					<tr>
+						<td width="100%" colspan="2" align="center">&nbsp;
+							<font color="#FFF" size="3"><b>My Social Network</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+					</tr>
+
+					<tr>
+						<td width="100%" colspan="2" align="center">
+							<a href="javascript:aprifb()"><img src="img/social1.png" height="74"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:apritw()"><img src="img/social4.png" height="74"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:aprili()"><img src="img/social3.png" height="74"></a>
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					</table>
+					<br><br>
+					
+					<table id="contatto" width="98%" height="100%" border="0" valign="center" align="center" class="div56">
+
+					<tr>
+						<td width="100%" colspan="2" align="center" >&nbsp;
+							<font color="#FFF" size="3"><b>My Contact</b></font>
+						</td>
+					</tr>
+
+					</table>
+					<br>
+					<table id="contatto" width="98%" height="100%" border="0" valign="center" align="center">
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<img src="img/Dindirizzo.png" height="32"><font color="#7e7e7e" size="2"><b>Address</b></font>
+								</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<a href="javascript:aprimappa()" class="visione"><font color="#042e72" size="3"><b>Via Zoe Fontana, 220 Roma</b></font></a>
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<a href="javascript:aprimappa()" class="visione"><img src="img/Piantina.png" width="300px"></a>
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<img src="img/Dtel.png" height="32"><font color="#7e7e7e" size="2"><b>Phone</b></font>
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<a href="tel:+39064153215" class="visione"><font color="#042e72" size="3">+39 06 4153215</font></a>
+							
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<img src="img/Dcell.png" height="32"><font color="#7e7e7e" size="2"><b>Mobile</b></font>
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<a href="tel:+393357540725" class="visione"><font color="#042e72" size="3">+39 335 7540725</font></a>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<img src="img/Demail.png" height="32"><font color="#7e7e7e" size="2"><b>e-mail</b></font>
+								</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<a href="javascript:aprimail()"><font color="#042e72" size="3">d.putignano@ermesitalia.it</font></a>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<img src="img/Dinternet1.png" height="32"><font color="#7e7e7e" size="2"><b>Web</b></font>
+								</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2" align="left">
+							<font color="#042e72" size="3"><b>www.ermesitalia.it</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					
+					
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+					<tr>
+						<td width="100%" colspan="2">&nbsp;
+							
+						</td>
+						
+					</tr>
+				</table>-->
+
+			</div>
+			
+		</div>
+		
+		<div id="pluto" align="center" valign="top" style="display: none;" >
+			
+		</div>
+		
+		<div id="pippo" style="display: none;">
+			<table border="0" align="center" width="100%" height="260px" class="visione">
+				<tr height="32px">
+					<td width="100%" align="right">
+						<a href="javascript:chiudi()"><img src="img/exit.png" width="32px"></a>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+						<img src="img/bannerino.jpg" width="160px" class="bannerino">
+							</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+						<font size="3" color="#fff"><b>Powerd by Ermes Italia s.rl.</b></font>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+						
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+						<font size="2" color="#fff">Questa App è stata sviluppata dalla piattaforma IBA. ogni App viene personalizzata in funzione delle caratteristiche che il cliente richiede.</font>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" align="center" valign="center">
+						<a href="javascript:aprimail0()"><font color="#fff" size="4"><b>info@ermesitalia.it</b></font></a>
+					</td>
+					<tr>
+						<td width="100%" align="center" valign="center">
+							<a href="tel:+390641531215" class="visione"><font color="#fff" size="4"><b>+39 06 41531215</b></font></a>
+						</td>
+					</tr>
+				</tr>
+			</table>
+		</div>
+		
+
+<div id="footer" data-role="footer" data-theme="b" data-tap-toggle="false" class="div1">
+	<div data-role="navbar" class="nav" data-grid="c" data-theme="b" class="div1">
+		<ul>
+			<li><a id="vedi" href="#" data-icon="homehome"><font size="1">Dottore</font></a></li>
+			<li><a id="primo" href="#" id="menuR" data-icon="ristohome"><font size="1">Richieste</font></a></li>
+			<!--<li><a id="secondo" href="#"  data-icon="pinhome"><font size="1">Mia Storia</font></a></li>-->
+			<li><a id="terzo" href="#" data-icon="taifun"><font size="1">Notifiche</font></a></li>
+			<li><a id="sesto" href="#"  data-icon="userhome"><font size="1">Contatti</font></a></li>
+		</ul>
+	</div>
+</div>
+
+		<!--<table width="100%" border="0" align="center" valign="center" class="div55" >
+			<tr>
+				<td algn="center" width="20%" align="center">
+					<a id="primo" href="#"><div class="pulsante1"></div></a>
+				</td>
+				<td algn="center" width="20%" align="center">
+					<a id="secondo" href="#"><div class="pulsante2"></div></a>
+				</td>
+				<td algn="center" width="20%" align="center">
+					<a id="terzo" href="#"><div id="pushbutton" width='100%' class="pulsante3"></div></a>
+				</td>
+				<td algn="center" width="20%" align="center">
+					<a id="sesto" href="#"><div id="contatti" width='100%' class="pulsante5"></div></a>
+				</td>
+				<td algn="center" width="20%" align="center">
+					<a id="quarto" href="#"><div id="biglietto" width='100%' class="pulsante4"></div></a>
+				</td>
+			</tr>
+		</table>-->
+		
+		</div>
+		
+		<!--<a href="#" data-rel="back" data-transition="slide" data-direction="reverse" >Close</a>-->
+		
+		<div id="page2" data-role="page" class="div2" >
+			
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+				<table height="52" align="center">
+					<tr>
+						<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="spinner" id="spinner"></div>
+
+			<div id="wrapper2">
+				<div id="scroller">
+
+
+					<table width="100%" height="40px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+					<div data-role="content">
+						<br>
+						<table id="formreg1" align="center">
+							<tr>
+								<td align="center">
+									<img src="img/Certificato.png" width="50">
+								</td>
+								<td width="50%" align="center">
+									<img src="img/Ricetta.png" width="50">
+								</td>
+							</tr>
+							<tr>
+								<td width="50%" align="center">
+									<a id="riccer" href="#" data-role="button" data-theme="b" class="custom-btn3">Certificato</a>
+								</td>
+								<td align="center"> 
+									<a id="ricric" href="#" data-role="button" data-theme="b" class="custom-btn3">Ricetta</a>
+									
+								</td>
+							</tr>
+						</table>
+					</div>
+					
+					<center>
+						
+						<table id="formreg2" align="center" width="310px" style="display: none;">
+							
+							<tr>
+								<td width="310px" align="center">
+									<form name="formia" action="entra.asp" method="post">
+										<input type="text" data-theme="b" name="emailreg" id="emailreg" value="" placeholder="Email">
+												<input type="text" data-theme="b" name="nome" id="nome" value="" placeholder="Nome">
+													<input type="text" data-theme="b" name="cognome" id="cognome" value="" placeholder="Cognome">
+														<input type="text" data-theme="b" name="telefono" id="telefono" value="" placeholder="Telefono">
+															<textarea id="note" data-theme="b" placeholder="Note Certificato" cols="5"></textarea>
+															<a href="#" id="#" data-role="button" data-theme="b" class="custom-btn">Spedisci</a>
+									</form>
+								</td>
+							</tr>
+						</table>
+						
+						<table id="formreg3" align="center" width="310px" style="display: none;">
+							
+							<tr>
+								<td width="310px" align="center">
+									<form name="formia" action="entra.asp" method="post">
+										<input type="text" data-theme="b" name="emailreg" id="emailreg" value="" placeholder="Email">
+											<input type="text" data-theme="b" name="nome" id="nome" value="" placeholder="Nome">
+												<input type="text" data-theme="b" name="cognome" id="cognome" value="" placeholder="Cognome">
+													<input type="text" data-theme="b" name="telefono" id="telefono" value="" placeholder="Telefono">
+														<textarea id="note" data-theme="b" placeholder="Note Ricetta" cols="5"></textarea>
+														<a href="#" id="#" data-role="button" data-theme="b" class="custom-btn">Spedisci</a>
+														</form>
+								</td>
+							</tr>
+						</table>
+
+
+					
+				</div>
+				
+			</div>
+			
+			<div data-role="footer" align="center" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1">
+				<table id="idfooter4" width="100%" align="center">
+					<tr>
+						<td width="100px" align="left">
+							<a id="primos" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+						</td>
+					</tr></table>
+			</div><!-- /footer6 -->
+	
+		</div><!-- /page2 -->
+		
+		<div id="page3" data-role="page" class="div2" >
+			
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+				<table height="52" align="center">
+					<tr>
+						<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<div id="wrapper3">
+				<div id="scroller">
+					<table id="spazioipad3" style="display: none;" height="30px"><tr><td></td></tr></table>
+					
+					<table width="100%" height="15px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+					
+					<table width="98%" height="100%" border="0" valign="center" align="center" >
+						
+						<tr>
+							<td width="100%" align="center">
+								<div id="titolov2" class="visione2"><font color="#042e72"><b>20/12/2015 - Ricetta</b></font></div>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								<a href="img/ricetta1.jpeg"><img src="img/ricetta1.jpeg" width="300"></a>
+								<!--<div id="video2"><div>
+								<a href="javascript:aprivideo2()"><img src="http://www.pokeranswer.it/img/video2.png" width="240px" data-rel="external"></a>-->
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								<hr>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								<div id="titolov3" class="visione2"><font color="#042e72"><b>20/12/2015 - Certificato</b></font></div>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								<img src="img/certificato1.jpg" width="300">
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+						
+					</table>
+					
+					<table height="48px"><tr><td></td></tr></table>
+					
+				</div>
+				
+			</div>
+			
+			<div data-role="footer" align="center" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1">
+				<table id="idfooter4" width="100%" align="center">
+					<tr>
+						<td width="100px" align="left">
+							<a id="secondos" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+						</td>
+					</tr></table>
+			</div><!-- /footer6 -->
+			
+		</div>
+		
+		
+		<div id="page4" data-role="page" class="div2" >
+			
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+				<table height="52" align="center">
+					<tr>
+						<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="spinner" id="spinner"></div>
+			<div id="wrapper4">
+				<div id="scroller">
+					<table id="spazioipad4" style="display: none;" height="30px"><tr><td></td></tr></table>
+
+					
+					<table width="100%" height="10px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+					<table width="98%" height="100%" border="0" valign="center" align="center" class="div8">
+						<!--<div id="contenuto"></div>-->
+						<tr title='"+ item.event_id +"'><td width='90%' align='center'><table width='100%' align='left' valign='center'><tr><td width='100%' align='left' colspan='2' valign='center'><div id='datepush' class='visione'>12/12/2005 - 30/01/2016 </div></td></tr><tr><td width='100%' colspan='2' valign='center'><div id='titolopush' class='visione'>Prima Notizia o Novita</div> </td></tr></table></td><td width='120' align='center' valign='center'><img id='noletto' src='img/Push.png' width='30px'></td></tr><tr><td colspan='2'><hr></td></tr>
+						<tr title='"+ item.event_id +"'><td width='90%' align='center'><table width='100%' align='left' valign='center'><tr><td width='100%' align='left' colspan='2' valign='center'><div id='datepush' class='visione'>12/12/2005 - 30/01/2016 </div></td></tr><tr><td width='100%' colspan='2' valign='center'><div id='titolopush' class='visione'>Seconda Notizia o Novita</div> </td></tr></table></td><td width='120' align='center' valign='center'><img id='noletto' src='img/Push.png' width='30px'></td></tr><tr><td colspan='2'><hr></td></tr>
+						<!--<tr>
+							<td width="80%" align="center">
+								<table width="100%" align="left" valign="center">
+									<tr>
+										<td width="95%">&nbsp;
+											
+										</td>
+										<td width="5%">
+											
+										</td>
+									</tr>
+									<tr>
+										<td width="100%" align="left" colspan="2" valign="center">
+											12/09/2015 - 31/10/2015
+										</td>
+									</tr>
+									<tr>
+										<td width="100%" colspan="2" valign="center">
+											Titolo della notifica
+										</td>
+										
+									</tr>
+								</table>
+							</td>
+							<td width="20%" align="center" valign="center">
+								<img src="img/notRead.png" width="42px">
+							</td>
+						</tr>
+						<tr><td colspan="2"><hr></td></tr>-->
+						<tr><td colspan='2'><br></td></tr>
+						<tr><td colspan='2'><br></td></tr>
+					</table>
+					
+					<table width="100%" height="70px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								<br><br>
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				
+			</div>
+			
+			<div data-role="footer" align="center" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1">
+				<table id="idfooter4" width="100%" align="center">
+					<tr>
+						<td width="100px" align="left">
+							<a id="terzos" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+						</td>
+					</tr></table>
+			</div><!-- /footer6 -->
+	
+		</div>
+		
+		<div id="page5" data-role="page" class="div2" >
+			
+			<table width="100%" border="0" valign="center" align="center" class="div3">
+				<tr>
+					<td width="100%" align="center">
+						<img src="img/logoermes.png" width="100%">
+							</td>
+				</tr>
+				
+			</table>
+			
+			<div id="pluto5" align="center" valign="top" style="display: none;" >
+				
+			</div>
+			
+			<div id="pippo5" style="display: none;">
+				<table border="0" align="center" width="100%" height="260px">
+					<tr height="32px">
+						<td width="100%" align="left">
+							<a href="javascript:chiudi5()"><img src="img/exit.png" width="32px"></a>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" align="center" valign="center">
+							<font color="#fff" size="3">Contatta tramite:</font>
+						</td>
+					</tr>
+					<tr>
+						<td width="100%" align="center" valign="center">
+							<a href="javascript:mandasms()"><img src="img/sms.png" width="100px"></a>&nbsp;&nbsp;<a href="javascript:aprimail()"><img src="img/email.png" width="100px"></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<div class="spinner" id="spinner"></div>
+			<div id="wrapper5">
+				<div id="scroller">
+					<table id="spazioipad5" style="display: none;" height="30px"><tr><td></td></tr></table>
+					
+					<table width="100%" height="24px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+					<div id="contenuto2"></div>
+					
+					<table width="100%" height="40px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				
+			</div>
+			
+			
+			<table width="100%" border="0" align="center" valign="center" class="div5">
+				<tr>
+					<td algn="center" width="20%" align="center">
+						<div class="pulsante11"></div>
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+				</tr>
+			</table>
+			
+			<table width="100%" border="0" align="center" valign="center" class="div55">
+				<tr>
+					<td algn="center" width="20%">
+						<a id="quartos44" href="#"><div width='50px' class="pulsanteback"></div></a>
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						<a id="pulsms" href="#"><div width='50px' class="pulsantereply"></div></a>
+					</td>
+					<td algn="left" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<div id="page6" data-role="page" class="div2" >
+			
+			<table width="100%" border="0" valign="center" align="center" class="div3">
+				<tr>
+					<td width="100%" align="center">
+						<img src="img/logoermes.png" width="100%">
+							</td>
+				</tr>
+				
+			</table>
+			
+			<div class="spinner" id="spinner"></div>
+			<div id="wrapper6">
+				<div id="scroller">
+					<table id="spazioipad6" style="display: none;" height="30px"><tr><td></td></tr></table>
+					
+					<table width="98%" height="100%" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" colspan="2">&nbsp;
+								
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center" colspan="2">
+								<div id="sendapp" class="visione3"><b>Send My App</b></div>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" colspan="2">&nbsp;
+								
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center" colspan="2">
+								<div id="scegli" class="visione">scegli come inviare la tua</font>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" align="center" colspan="2">
+								<div id="digital" class="visione3"><b>Digital Business Card</b></div>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" colspan="2">&nbsp;
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%" align="center">
+								<a href="javascript:mandasms5()"><img src="img/sms.png" width="66%"></a>
+							</td>
+							<td width="50%" align="center">
+								<a href="javascript:aprimail5()"><img src="img/email.png" width="66%"></a>
+							</td>
+						</tr>
+						<tr>
+							<td width="100%" colspan="2">&nbsp;
+								
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" width="100%" align="center">&nbsp;
+								<img src="img/d_putignano.png" width="33%">
+							</td>
+						</tr>
+					</table>
+					
+					
+					<table width="100%" height="40px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+					
+				</div>
+				
+			</div>
+			
+			
+			<table width="100%" border="0" align="center" valign="center" class="div5">
+				<tr>
+					<td algn="center" width="20%" align="center">
+						<div class="pulsante11"></div>
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+					<td algn="center" width="20%" align="center">
+						
+					</td>
+				</tr>
+			</table>
+			
+			<table width="100%" border="0" align="center" valign="center" class="div55">
+				<tr>
+					<td algn="center" width="20%">
+						<a id="sestos" href="#"><div width='50px' class="pulsanteback"></div></a>
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		
+		<div id="page7" data-role="page" class="div2" >
+			
+			<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+				<table height="52" align="center">
+					<tr>
+						<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="spinner" id="spinner"></div>
+			<div id="wrapper7">
+				<div id="scroller">
+					<table id="spazioipad7" style="display: none;" height="30px"><tr><td></td></tr></table>
+					
+					<table width="90%" height="100%" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%">
+								<div id="testoTitolo3" class="visione2" align="center"><b>Cardiologo, Patologo Clinico</b><br><br></div>
+							</td>
+						</tr>
+						<tr>
+							<td width="90%" align="justify" colspan="2">
+								<div id="testo3" class="visione">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..<br><br> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..<br><br>
+									Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..&nbsp;<br><br></div>
+				
+				</td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2" align="center">
+						<font ><font color="blue">&nbsp;</font></font>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2" align="center">
+						<font ><font color="blue">&nbsp;</font></font>
+					</td>
+				</tr>
+				<tr>
+					<td width="100%" colspan="2" align="center">
+						<font ><font color="blue">&nbsp;</font></font>
+					</td>
+				</tr>
+			
+				</table>
+					
+					
+					<table width="100%" height="40px" border="0" valign="center" align="center" >
+						<tr>
+							<td width="100%" align="center">
+								
+							</td>
+						</tr>
+					</table>
+
+
+				</div>
+			
+			</div>
+		
+		
+		<!--<table width="100%" border="0" align="center" valign="center" class="div5">
+			<tr>
+				<td algn="center" width="20%" align="center">
+					<div class="pulsante11"></div>
+				</td>
+				<td algn="center" width="20%" align="center">
+					
+				</td>
+				<td algn="center" width="20%" align="center">
+					
+				</td>
+				<td algn="center" width="20%" align="center">
+					
+				</td>
+				<td algn="center" width="20%" align="center">
+					
+				</td>
+			</tr>
+		</table>
+		
+			<table width="100%" border="0" align="center" valign="center" class="div55">
+				<tr>
+					<td algn="center" width="20%">
+						<a id="quintos" href="#"><div width='50px' class="pulsanteback"></div></a>
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+					<td algn="center" width="20%">
+						
+					</td>
+				</tr>
+			</table>-->
+		
+		
+		<div data-role="footer" align="center" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1">
+			<table id="idfooter4" width="100%" align="center">
+				<tr>
+					<td width="100px" align="left">
+						<a id="quintos" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+					</td>
+				</tr></table>
+		</div><!-- /footer6 -->
+		
+		</div>
+		
+
+<div id="page8" data-role="page" class="div2" >
+	
+	<div data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1" >
+		<table height="52" align="center">
+			<tr>
+				<td valign="center"><font color="#FFFFFF" size="4">Dott. Gianni Melai</font></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div class="spinner" id="spinner"></div>
+	<div id="wrapper8">
+		<div id="scroller">
+			<table id="spazioipad8" style="display: none;" height="30px"><tr><td></td></tr></table>
+			
+			<table width="100%" height="15px" border="0" valign="center" align="center" >
+				<tr>
+					<td width="100%" align="center">
+						
+					</td>
+				</tr>
+			</table>
+			
+			<table width="100%" height="10%" border="0" valign="center" align="center" >
+			 <tr>
+			 <td width="100%" align="center">
+			 
+			 </td>
+			 </tr>
+			 </table>
+			 
+			 <table id="ciccio" height="100%" border="0" valign="center" align="center" class="div56">
+				 <tr>
+					 <td width="100%" colspan="2">&nbsp;
+						 
+					 </td>
+				 </tr>
+			 <tr>
+			 <td width="100%" colspan="2" align="center">&nbsp;
+			 <font color="#FFF" size="3"><b>My Social Network</b></font>
+			 </td>
+			 </tr>
+			 <tr>
+			 <td width="100%" colspan="2">&nbsp;
+			 
+			 </td>
+			 </tr>
+			 
+			 <tr>
+			 <td width="100%" colspan="2" align="center">
+			 <a href="javascript:aprifb()"><img src="img/social1.png" width="25%"></a>&nbsp;&nbsp;<a href="javascript:apritw()"><img src="img/social4.png" width="25%"></a>&nbsp;&nbsp;<a href="javascript:aprili()"><img src="img/social3.png" width="25%"></a>
+			 </td>
+			 
+			 </tr>
+			 <tr>
+			 <td width="100%" colspan="2">&nbsp;
+			 
+			 </td>
+			 
+			 </tr>
+			 </table>
+			 
+			 <!--<table id="contatto" width="98%" height="100%" border="0" valign="center" align="center" class="div56">
+			 
+			 <tr>
+			 <td width="100%" colspan="2" align="center" >&nbsp;
+			 <font color="#FFF" size="3"><b>My Contact</b></font>
+			 </td>
+			 </tr>
+			 
+			 </table>-->
+			 
+			 <br>
+			 <table id="contatto" width="90%" height="100%" border="0" valign="center" align="center">
+				 <tr>
+					 <td width="10%" align="left" align="center">
+						 <img src="img/Dindirizzo.png" height="25%">
+							 </td>
+					 <td width="90%" align="left" valign="bottom">
+						 <div id="indirizzotext" class="visione2Con"><font color="#7e7e7e"><b>Address</b></font></div>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="left">
+						 <a href="javascript:aprimappa()" class="visione2Con"><div id="indirizzoV" class="visione2Con"><b>Via Monte Rosa, 51 - 20149 Milano</b></div></a>
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="center">
+						 <a href="javascript:aprimappa()" class="visione"><img src="img/Piantina.png" width="95%"></a>
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2"><br>&nbsp;<br>
+						 
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="10%" align="left" align="center">
+						 <img src="img/Dtel.png" height="25%">
+							 </td>
+					 <td width="90%" align="left" valign="bottom">
+				   <div id="phonetext" class="visione2Con"><font color="#7e7e7e"><b>Phone</b></font></div>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="left">
+						 <a href="tel:+3902555559" class="visione2Con"><div id="phoneV" class="visione2Con">+39 01155555</div></a>
+						 
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2"><br>&nbsp;<br>
+						 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="10%" align="left" align="center">
+						 <img src="img/Dcell.png" height="25%">
+							 </td>
+					 <td width="90%" align="left" valign="bottom">
+						 <div id="mobiletext" class="visione2Con"><font color="#7e7e7e"><b>Mobile</b></font></div>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="left">
+						 <a href="tel:+393483026179" class="visione2Con"><div id="mobileV" class="visione2on"><font color="#042e72">+39 061111</font></div></a>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2"><br>&nbsp;<br>
+						 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="10%" align="left" align="center">
+						 <img src="img/Demail.png" height="25%">
+							 </td>
+					 <td width="90%" align="left" valign="bottom">
+						 <div id="emailtext" class="visione2Con"><font color="#7e7e7e"><b>e-mail</b></font></div>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="left">
+						 <a href="javascript:aprimail()"><div id="emailV" class="visione2Con">info@doctor.it</div></a>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2"><br>&nbsp;<br>
+						 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="10%" align="left" align="center">
+						 <img src="img/Dinternet1.png" height="25%">
+							 </td>
+					 <td width="90%" align="left" valign="bottom">
+						 <div id="webtext" class="visione2Con"><font color="#7e7e7e"><b>Web</b></font></div>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2" align="left">
+						 <a href="javascript:apriweb()"><div id="webV" class="visione2Con"><b>http://www.google.it</b></div></a>
+					 </td>
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2"><br>&nbsp;<br>
+						 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2">&nbsp;
+						 
+					 </td>
+					 
+				 </tr>
+				 
+				 
+				 <tr>
+					 <td width="100%" colspan="2">&nbsp;
+						 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+					 <td width="100%" colspan="2">&nbsp;
+						 
+					 </td>
+					 
+				 </tr>
+			 </table>
+			 
+			 <table width="100%" height="40px" border="0" valign="center" align="center" >
+				 <tr>
+					 <td width="100%" align="center">
+						 
+					 </td>
+				 </tr>
+			 </table>
+
+		</div>
+		
+	</div>
+	
+	<div data-role="footer" align="center" data-theme="b" data-position="fixed" data-tap-toggle="false" class="div1">
+		<table id="idfooter4" width="100%" align="center">
+			<tr>
+				<td width="100px" align="left">
+					<a id="ottavos" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">Home</a>
+				</td>
+			</tr></table>
+	</div><!-- /footer6 -->
+	
+	
+	<!--<table width="100%" border="0" align="center" valign="center" class="div5">
+		<tr>
+			<td algn="center" width="20%" align="center">
+				<div class="pulsante11"></div>
+			</td>
+			<td algn="center" width="20%" align="center">
+				
+			</td>
+			<td algn="center" width="20%" align="center">
+				
+			</td>
+			<td algn="center" width="20%" align="center">
+				
+			</td>
+			<td algn="center" width="20%" align="center">
+				
+			</td>
+		</tr>
+	</table>
+	
+	<table width="100%" border="0" align="center" valign="center" class="div55">
+		<tr>
+			<td algn="center" width="20%">
+				<a id="ottavos" href="#"><div width='50px' class="pulsanteback"></div></a>
+			</td>
+			<td algn="center" width="20%">
+				
+			</td>
+			<td algn="center" width="20%">
+				
+			</td>
+			<td algn="center" width="20%">
+				
+			</td>
+			<td algn="center" width="20%">
+				
+			</td>
+		</tr>
+	</table>-->
+	
+</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		
+		<script type="text/javascript">
+			app.initialize();
+			</script>
+
+	</body>
+</html>
