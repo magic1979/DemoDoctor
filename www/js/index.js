@@ -155,9 +155,8 @@ var app = {
 		}
 		else
 		{
-			//alert(screen.width);
 			
-			$("#testoTitolo").attr("class", "visione3IPAD");
+			/*$("#testoTitolo").attr("class", "visione3IPAD");
 			$("#testo").attr("class", "visioneIPAD");
 			$("#testoCentrale").attr("class", "visione2IPAD");
 			$("#Nome").attr("class", "visione3aIPAD");
@@ -199,11 +198,9 @@ var app = {
 			$("#webtext").attr("class", "visioneIPAD");
 			$("#webV").attr("class", "visione2IPAD");
 			
-			//$("#video").html("<iframe width='460' height='280' src='http://www.youtube.com/embed/cf5PVgbrlCM?feature=player_embedded' frameborder='0' allowfullscreen></iframe>");
 			
-			$("#video2").html("<iframe width='460' height='280' src='http://www.youtube.com/embed/Hl10lNEVBrU?feature=player_embedded' frameborder='0' allowfullscreen></iframe>");
+			$("#video2").html("<iframe width='460' height='280' src='http://www.youtube.com/embed/Hl10lNEVBrU?feature=player_embedded' frameborder='0' allowfullscreen></iframe>");*/
 			
-			//initscroll()
 		}
 		
 
